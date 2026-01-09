@@ -1,0 +1,33 @@
+Налаштування проекту (з нуля) — команди з методички
+
+1) Створити папку і зайти в неї
+   mkdir simple-express-api
+   cd simple-express-api
+
+2) Ініціалізувати Node.js проект
+   npm init -y
+
+3) Встановити залежності
+   npm install express cors helmet morgan
+
+4) Встановити dev-залежність
+   npm install -D nodemon
+
+5) Створити структуру папок
+   mkdir src
+   mkdir src\data
+   mkdir src\routes
+
+6) Оновити package.json (scripts)
+   "start": "node src/app.js"
+   "dev": "nodemon src/app.js"
+
+7) Створити файли:
+   src/app.js
+   src/data/users.js
+   src/data/products.js
+   src/routes/auth.js
+   src/routes/products.js
+
+8) Запуск
+   npm run dev
